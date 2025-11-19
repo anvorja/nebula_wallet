@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Nebula Wallet - Futuristic Dark Theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Neon Cyan Primary */
+    --primary: 189 97% 55%;
+    --primary-foreground: 240 10% 3.9%;
+
+    /* Purple Galactic Secondary */
+    --secondary: 270 91% 65%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 189 97% 55%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 12%;
+    --ring: 189 97% 55%;
+
+    --radius: 1rem;
+
+    /* Glass effect variables */
+    --glass-bg: 240 10% 8%;
+    --glass-border: 240 10% 18%;
+    --glass-shine: 0 0% 100%;
+    
+    /* Neon glow colors */
+    --neon-cyan: 189 97% 55%;
+    --neon-purple: 270 91% 65%;
+    --neon-pink: 328 85% 70%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(189 97% 55% / 0.8), hsl(270 91% 65% / 0.8));
+    --gradient-card: linear-gradient(135deg, hsl(240 10% 8% / 0.6), hsl(240 10% 6% / 0.4));
+    --gradient-hero: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 10% 8%));
+    
+    /* Shadows & Glows */
+    --shadow-neon: 0 0 30px hsl(189 97% 55% / 0.3);
+    --shadow-purple: 0 0 30px hsl(270 91% 65% / 0.3);
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.4);
+    
+    /* Sidebar */
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 189 97% 55%;
+    --sidebar-primary-foreground: 240 10% 3.9%;
+    --sidebar-accent: 240 10% 10%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 10% 15%;
+    --sidebar-ring: 189 97% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 10% 8%));
+    min-height: 100vh;
+  }
+  
+  /* Glass morphism base */
+  .glass {
+    background: linear-gradient(135deg, hsl(var(--glass-bg) / 0.6), hsl(var(--glass-bg) / 0.3));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border) / 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  /* Neon glow effect */
+  .neon-glow {
+    box-shadow: 0 0 20px hsl(var(--neon-cyan) / 0.5), 0 0 40px hsl(var(--neon-cyan) / 0.2);
+  }
+  
+  /* Smooth animations */
+  * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

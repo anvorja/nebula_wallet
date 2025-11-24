@@ -1,3 +1,4 @@
+// src/components/chat/ChatInterface.tsx
 import { motion } from 'framer-motion';
 import { Send, Sparkles } from 'lucide-react';
 import { useState } from 'react';

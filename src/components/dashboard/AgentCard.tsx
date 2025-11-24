@@ -1,3 +1,4 @@
+// src/components/dashboard/AgentCard.tsx
 import { motion } from 'framer-motion';
 import { Bot, Activity, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';

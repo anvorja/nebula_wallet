@@ -1,3 +1,4 @@
+// src/components/dashboard/TokenCard.tsx
 import { motion } from 'framer-motion';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 

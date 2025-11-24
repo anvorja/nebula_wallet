@@ -1,3 +1,4 @@
+// src/components/layout/Sidebar.tsx
 import { motion } from 'framer-motion';
 import { 
   LayoutDashboard, 

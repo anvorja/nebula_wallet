@@ -1,3 +1,4 @@
+// src/pages/Chat.tsx
 import { motion } from 'framer-motion';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';

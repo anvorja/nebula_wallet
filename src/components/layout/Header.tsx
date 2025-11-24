@@ -1,3 +1,4 @@
+// src/components/layout/Header.tsx
 import { motion } from 'framer-motion';
 import { Bell, Search, Wallet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
